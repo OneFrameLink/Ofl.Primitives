@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 
 namespace Ofl
 {
@@ -14,7 +13,7 @@ namespace Ofl
     /// class in .NET.</summary>
     ///
     //////////////////////////////////////////////////
-    public static class StringExtensions
+    public static partial class StringExtensions
     {
         public static IEnumerable<string> EnumerateLines(this string value)
         {
@@ -41,24 +40,6 @@ namespace Ofl
                 // Yield the line.
                 yield return line;
             }
-        }
-
-        public static string CoalesceNullOrWhitespace(params string[] strings)
-        {
-            // Validate parameters.
-            if (strings == null) throw new ArgumentNullException(nameof(strings));
-
-            // Call the overload.
-            return strings.CoalesceNullOrWhitespace();
-        }
-
-        public static string CoalesceNullOrWhitespace(this IEnumerable<string> strings)
-        {
-            // Validate parameters.
-            if (strings == null) throw new ArgumentNullException(nameof(strings));
-
-            // Return the first non null or non whitespace string.
-            return strings.FirstOrDefault(s => !string.IsNullOrWhiteSpace(s));
         }
     }
 }
