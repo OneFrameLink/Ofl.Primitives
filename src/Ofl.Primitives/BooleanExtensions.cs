@@ -4,11 +4,8 @@
     {
         public static bool? TryParse(string value)
         {
-            // The output.
-            bool result;
-
             // If success, return the output.
-            if (bool.TryParse(value, out result)) return result;
+            if (bool.TryParse(value, out var result)) return result;
 
             // Return null.
             return null;

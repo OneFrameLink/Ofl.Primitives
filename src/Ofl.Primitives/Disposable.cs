@@ -19,7 +19,6 @@ namespace Ofl
         protected virtual void Dispose(bool disposing)
         { }
 
-
         ~Disposable() {
             Dispose(false);
         }
