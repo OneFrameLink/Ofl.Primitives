@@ -2,7 +2,7 @@ using Xunit;
 
 namespace Ofl.Primitives.Tests
 {
-    public partial class StringExtensionsTests
+    public class StringExtensionsTests_ToCamelCase
     {
         [Theory]
         [InlineData("", "")]

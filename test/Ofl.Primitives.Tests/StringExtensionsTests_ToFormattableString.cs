@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Ofl.Primitives.Tests
 {
-    public partial class StringExtensionsTests
+    public class StringExtensionsTests_ToFormattableString
     {
         [Fact]
         public void ToFormattableString_Throws_Null()
