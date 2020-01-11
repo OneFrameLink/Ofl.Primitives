@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Globalization;
-using System.Text;
 
 namespace Ofl
 {
@@ -24,14 +23,14 @@ namespace Ofl
             // If lower case, then get out.
             if (char.IsLower(firstCharacter)) return value;
 
-            // Create a string builder.
-            var builder = new StringBuilder(value);
+            // Create a new string.
+            return string.Create(value.Length, 0, (s, _) => {
+                // Replace the first character.
+                s[0] = cultureInfo.TextInfo.ToLower(firstCharacter);
 
-            // Replace.
-            builder[0] = cultureInfo.TextInfo.ToLower(firstCharacter);
-
-            // Compute.
-            return builder.ToString();
+                // Copy the rest of the string.
+                value.AsSpan().Slice(1).CopyTo(s.Slice(1));
+            });
         }
     }
 }

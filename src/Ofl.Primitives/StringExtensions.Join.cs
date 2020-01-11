@@ -5,7 +5,7 @@ namespace Ofl
 {
     public static partial class StringExtensions
     {
-        public static string Join(this IEnumerable<string> values, string separator)
+        public static string Join(this IEnumerable<string> values, string? separator)
         {
             // Validate parameters.
             if (values == null) throw new ArgumentNullException(nameof(values));

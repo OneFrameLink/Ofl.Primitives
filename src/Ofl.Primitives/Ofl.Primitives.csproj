@@ -1,13 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Description>System level extensions for the OFL project.</Description>
     <AssemblyName>Ofl.Primitives</AssemblyName>
     <PackageId>Ofl.Primitives</PackageId>
     <PackageProjectUrl>https://github.com/OneFrameLink/Ofl.Primitives</PackageProjectUrl>
     <RepositoryUrl>https://github.com/OneFrameLink/Ofl.Primitives.git</RepositoryUrl>
-    <Version>2.1.0</Version>
+    <Version>3.0.0</Version>
     <PackageTags>primitives</PackageTags>
     <RootNamespace>Ofl</RootNamespace>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 </Project>

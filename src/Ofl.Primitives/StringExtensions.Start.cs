@@ -4,7 +4,7 @@ namespace Ofl
 {
     public static partial class StringExtensions
     {
-        public static string Start(this string value, int count)
+        public static string? Start(this string? value, int count)
         {
             // Validate parameters.
             if (count < 0)

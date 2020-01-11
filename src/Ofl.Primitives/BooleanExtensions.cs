@@ -2,13 +2,9 @@
 {
     public class BooleanExtensions
     {
-        public static bool? TryParse(string value)
-        {
-            // If success, return the output.
-            if (bool.TryParse(value, out var result)) return result;
-
-            // Return null.
-            return null;
-        }
+        public static bool? TryParse(string? value) =>
+            bool.TryParse(value, out var result)
+                ? result
+                : (bool?) null;
     }
 }

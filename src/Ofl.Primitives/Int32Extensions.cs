@@ -5,7 +5,7 @@ namespace Ofl
 {
     public static class Int32Extensions
     {
-        public static int? TryParse(string s, NumberStyles style, IFormatProvider provider)
+        public static int? TryParse(string? s, NumberStyles style, IFormatProvider provider)
         {
             // The value.
             int value;
@@ -17,7 +17,7 @@ namespace Ofl
             return null;
         }
 
-        public static int? TryParse(string s)
+        public static int? TryParse(string? s)
         {
             // The value.
             int value;
