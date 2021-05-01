@@ -6,7 +6,7 @@ namespace Ofl
 {
     public static partial class StringExtensions
     {
-        public static string CoalesceNullOrWhitespace(params string[] strings)
+        public static string? CoalesceNullOrWhitespace(params string?[] strings)
         {
             // Validate parameters.
             if (strings == null) throw new ArgumentNullException(nameof(strings));
@@ -15,7 +15,7 @@ namespace Ofl
             return strings.CoalesceNullOrWhitespace();
         }
 
-        public static string CoalesceNullOrWhitespace(this IEnumerable<string> strings)
+        public static string? CoalesceNullOrWhitespace(this IEnumerable<string?> strings)
         {
             // Validate parameters.
             if (strings == null) throw new ArgumentNullException(nameof(strings));
