@@ -5,6 +5,7 @@
     <RepositoryType>git</RepositoryType>
     <Copyright>Copyright &#169; 2021 One Frame Link</Copyright>
     <LangVersion>latest</LangVersion>
+    <Version>3.1.0</Version>
     
     <!-- Licensing, as per: https://github.com/NuGet/Home/wiki/Packaging-License-within-the-nupkg#project-properties -->
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
